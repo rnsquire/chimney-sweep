@@ -1,0 +1,126 @@
+/* Font */
+
+* {
+  color: rgba(0, 0, 0, 0.5);
+font-size: 1.65vh;
+}
+
+h {
+  font-size: 3vh;
+}
+
+/*  Defaults */
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Side */
+
+.slogan {
+  position: absolute;
+  text-align: center;
+  bottom: 5%;
+  width: 100%;
+  font-size: 3vh;
+  color: rgba(255, 255, 255);
+}
+
+.man {
+  position: absolute;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 80%;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+
+#side {
+  position: fixed;
+  width: 50vh;
+  height: 100%;
+  animation: fadebg 30s;
+  animation-iteration-count: infinite;
+}
+
+#cleanSlogan,
+#cleanLogo {
+  animation: fadeinout 30s;
+  animation-iteration-count: infinite;
+}
+
+#dirtySlogan,
+#dirtyLogo {
+  animation: fadeoutin 30s;
+  animation-iteration-count: infinite;
+}
+
+#cleanMan {
+  animation: fadeoutinfast 30s;
+  animation-iteration-count: infinite;
+}
+
+/* Content */
+
+#content {
+  margin-left: 50vh;
+  padding-inline: 5%;
+  padding-top: 2%;
+}
+
+section {
+  border-top: solid 0.1vh rgba(0, 0, 0, 0.5);
+  margin-top: 3%;
+  padding-top: 3%;
+}
+
+/* Contact */
+
+#contact {
+  padding-top: 2%;
+}
+
+#links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 5%;
+}
+
+#links li a:hover {
+  color: #49bf9d;
+}
+
+@media (max-width: 120vh) {
+
+  .man,
+  .slogan {
+    display: none;
+  }
+
+  #side {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+  }
+
+  .logo {
+    bottom: 0;
+    width: 40vh;
+  }
+
+  #content {
+    margin-left: 0;
+  }
+}

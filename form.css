@@ -1,0 +1,24 @@
+textarea {
+  resize: none;
+}
+
+input,
+#submit,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: solid 0.1vh rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  background: transparent;
+}
+
+#submit {
+  cursor: pointer;
+}
+
+input:hover,
+#submit:hover,
+textarea:hover {
+  background: rgba(214, 214, 214, 0.5)
+}
