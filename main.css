@@ -2,17 +2,37 @@
 
 * {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 1.65vh;
+  font-size: 1.5vh;
 }
 
-h {
-  font-size: 3vh;
+h1 {
+  font-size: 2.2vh;
 }
 
 /*  Defaults */
 
-body {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
+}
+
+h1 {
+  padding-bottom: 1%;
+}
+
+h2 {
+  padding-bottom: 2%;
+}
+
+p {
+  margin: 0;
+}
+
+p+p {
+  margin-top: 2%;
 }
 
 a {
@@ -24,7 +44,7 @@ a {
 .slogan {
   position: absolute;
   text-align: center;
-  bottom: 5%;
+  bottom: 7%;
   width: 100%;
   font-size: 3vh;
   color: rgba(255, 255, 255);
@@ -86,10 +106,6 @@ section {
 }
 
 /* Contact */
-
-#contact {
-  padding-top: 2%;
-}
 
 #links {
   list-style: none;
