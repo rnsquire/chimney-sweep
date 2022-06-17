@@ -1,13 +1,16 @@
 /* Font */
 
-* {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.65vh;
+@-ms-viewport {
+  width: device-width;
 }
 
+* {
+  color: rgb(13, 13, 13);
+  font-size: 1.9vh;
+}
 
 h1 {
-  font-size: 2.6vh;
+  font-size: 2.9vh;
 }
 
 /*  Defaults */
@@ -115,13 +118,9 @@ section {
   color: #49bf9d;
 }
 
-@media (max-width: 50vh) {
-  * {
-    font-size: 0.8vh;
-  }
-
+@media (max-width: 53vh) {
   h1 {
-    font-size: 1.8vh;
+    font-size: 2.6vh;
   }
 
   #links li a {
